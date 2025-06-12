@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio | Keyber Mendoza Desarrollador Web">
+    <meta name="robots" content="index,follow"> 
+
+    <!-- Librerías -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="./stylesheets/loader.css">
+    <link rel="stylesheet" href="./stylesheets/index.css">
+    <link rel="stylesheet" href="./stylesheets/tablet.css" media="screen and (min-width: 760px)">
+    <link rel="stylesheet" href="./stylesheets/desktop.css" media="screen and (min-width: 980px)">
+
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/ae0fd6f99f.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    
+    <div class="container--loader">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header">
+
+        <nav class="nav_menu not-active">
+            <a href="#home">Home</a>
+            <a href="#sobreMi" data-section="menu" data-value="item2">Sobre mí</a>
+            <a href="#habilidades" data-section="menu" data-value="item3">Habilidades</a>
+            <a href="#proyectos" data-section="menu" data-value="item4">Proyectos</a>
+            <a href="#contacto" data-section="menu" data-value="item6">Contacto</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section class="home" id="home">
+            <picture class="container_image-home" data-aos="zoom-in">
+            <div class="barrass">
+                <img src="./images/puntos.png" alt="Decoración puntos" class="barrass">
+            </div>
+            <div class="barras2">    
+                <img src="./images/puntos.png" alt="Decoración puntos" class="barras2">
+            </div>
+            
+                <img class="image_home" src="./images/yoo.png" alt="imagen principal">
+            </picture>
+            
+            <div class="home_info">
+                <div class="container_text-info">
+                    <p class="home_text-1" data-section="home" data-value="home_text-1">Hola! Soy</p>
+                    <p class="home_text-2">Keyber Mendoza</p>
+                </div>
+
+                <div>
+                    <p class="home_text-3 text-type" data-section="home" data-value="home_text-3">Desarrollador Web Front-End</p>
+                </div>
+
+                <div class="container_parrafo-info">
+                    <p data-section="home" data-value="parrafo-info">Soy estudiante en programación enfocado al Desarrollo Web Frontend. Como persona amante a los diseños intuitivos y estéticamente agradables busco crear proyectos que brinden la mejor experiencia para el usuario.</p>
+                </div>
+
+                <div class="container_button">
+                    <a href="#" target="_blank">
+                        <button class="cv_button" data-section="home" data-value="cv_button">Descargar CV</button>
+                    </a>
+                    <a href="#contacto">
+                        <button class="contact_button" data-section="home" data-value="contact_button">Contacto</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="links">
+                <a href="https://github.com/KeyberIT" target="_blank">
+                    <img src="./images/icon-github.png" alt="GitHub" class="icon-github">
+                </a>
+                <a href="https://www.instagram.com/keyber62/" target="_blank">
+                    <img src="./images/icon-instagram.png" alt="Instagram" class="icon-instagram">
+                </a>
+            </div>
+        </section>
+
+        <!-- Sobre mí -->
+        <section class="sobreMi" id="sobreMi">
+            <h1 data-section="sobre-mi" data-value="title" data-aos="fade-up">Sobre mí</h1>
+
+            <div class="container_content-sobreMi" data-aos="fade-right">
+                <div class="container_texto-sobreMi">
+                    <span class="title_sobreMi">Keyber Mendoza</span>
+                    <div class="container_sobreMi">
+            <p class="texto_sobreMi" data-section="sobre-mi" data-value="texto_sobreMi">Soy estudiante de la universidad Romulo Gallegos y soy autodidacta en Desarrollo Web enfocado en programación Frontend.
+                     </p>
+                        <p class="texto_sobreMi">Aspiro conseguir empleo en el mundo del Desarrollo Web, adquirir experiencia, nuevos conocimientos y fortalecer mi vida profesional.</p>
+                        <p class="texto_sobreMi">Soy una persona empática y entusiasta, con competencias enfocadas en el trabajo en equipo, comunicación asertiva, resolución de problemas, responsable y proactiva. Me gusta aprender de los demás y superarme continuamente.</p>
+                    </div>
+        
+                        
+                </div>
+    
+                <picture class="container_image-sobreMi">
+                    <img class="image_sobreMi" src="./images/3d.png" alt="3d-animation">
+                </picture>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="habilidades" id="habilidades">
+            <h1 data-section="habilidades" data-value="title" data-aos="fade-up">Habilidades</h1>
+
+            <img src="./images/puntos.png" alt="Decoración puntos" class="puntos1-habilidades">
+            <img src="./images/puntos.png" alt="Decoración puntos" class="puntos2-habilidades">
+
+            <div class="cards_container--habilidades">
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="500">
+                    <img src="./images/icon-html.png" alt="HTML">
+                    <p>HTML 5</p>
+                </div>
+                
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
+                    <img src="./images/icon-css.png" alt="CSS">
+                    <p>CSS 3</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="900">
+                    <img src="./images/icon-js.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="1100">
+                    <img src="./images/icon-Notion.png" alt="Notion">
+                    <p>Notion</p>
+                </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section class="proyectos" id="proyectos">
+            <h1 data-section="proyectos" data-value="title" data-aos="fade-up">Mis Proyectos</h1>
+            <div class="cards_container--proyectos">
+                <!-- Proyecto 1 -->
+
+                <div class="card--proyecto" data-aos="fade-up" data-aos-duration="900">
+                    <div class="card--proyecto-img">
+                        <img src="./images/ferreteria.jpg" alt="Proyecto Web">
+                        <div class="card--proyecto-overlay">
+                            <a href="https://ferreteria-frontend-rho.vercel.app/" class="btn-visitar">Ver Proyecto</a>
+                        </div>
+                    </div>
+                        <div class="card--proyecto-content">
+                            <h3>Ferretería App - Tienda Virtual</h3>
+                            <p>Ferretería App es una plataforma de comercio electrónico 
+                                diseñada específicamente para ferreterías, 
+                                permitiendo a los clientes explorar, agregar productos al carrito y comprar 
+                                 en línea de manera sencilla e intuitiva.</p>
+                            <div class="tecnologias">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Node.js</span>
+                                <span>SQLite3</span>
+                        </div>
+                    </div>
+                </div>
+
+            
+                
+                <!-- Proyecto 2 -->
+                <div class="card--proyecto" data-aos="fade-up" data-aos-duration="700">
+                    <div class="card--proyecto-img">
+                        <img src="./images/starup.jpg" alt="Proyecto Startup">
+                        <div class="card--proyecto-overlay">
+                            <a href="https://startup-mu-three.vercel.app/" class="btn-visitar">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div class="card--proyecto-content">
+                        <h3>Plataforma Startup</h3>
+                        <p>Landing page moderna para emprendedores y startups.</p>
+                        <div class="tecnologias">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+               
+                <div class="card--proyecto" data-aos="fade-up" data-aos-duration="900">
+                    <div class="card--proyecto-img">
+                        <img src="./images/portafolio_1.jpg" alt="Proyecto Web">
+                        <div class="card--proyecto-overlay">
+                            <a href="https://pagina-web-de-miniportafolio.vercel.app/" class="btn-visitar">Ver Proyecto</a>
+                        </div>
+                    </div>
+                        <div class="card--proyecto-content">
+                            <h3>Sitio Web de portafolio</h3>
+                            <p>Un sitio web de portafolio</p>
+                            <div class="tecnologias">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            
+                                
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="card--proyecto" data-aos="fade-up" data-aos-duration="500">
+                    <div class="card--proyecto-img">
+                        <img src="./images/Restaurantek.jpg" alt="Sistema de Restaurante">
+                        <div class="card--proyecto-overlay">
+                            <a href="https://restaurante-web-ashy.vercel.app/" class="btn-visitar">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div class="card--proyecto-content">
+                        <h3>Sistema de Restaurante</h3>
+                        <p>Plataforma web completa para gestión de pedidos y menú de restaurante.</p>
+                        <div class="tecnologias">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Proyecto 5 -->
+
+                <div class="card--proyecto" data-aos="fade-up" data-aos-duration="900">
+                    <div class="card--proyecto-img">
+                        <img src="./images/paginaFrontend.jpg" alt="Proyecto Web">
+                        <div class="card--proyecto-overlay">
+                            <a href="https://moon-light-nu.vercel.app/" class="btn-visitar">Ver Proyecto</a>
+                        </div>
+                    </div>
+                        <div class="card--proyecto-content">
+                            <h3>Moon Light</h3>
+                            <p>Moon Light es un sitio web interactivo de una sola página 
+                                que presenta un impresionante efecto de desplazamiento 
+                                parallax con un tema nocturno y lunar.</p>
+                            <div class="tecnologias">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Proyecto 6 -->
+                <div class="card--proyecto" data-aos="fade-up" data-aos-duration="900">
+                    <div class="card--proyecto-img">
+                        <img src="./images/loginandregister.jpg" alt="Proyecto Web">
+                        <div class="card--proyecto-overlay">
+                            <a href="https://pagina-web-de-login-and-register.vercel.app/" class="btn-visitar">Ver Proyecto</a>
+                        </div>
+                    </div>
+                        <div class="card--proyecto-content">
+                            <h3>Web Moderna</h3>
+                            <p>web moderna que permite a los usuarios
+                                 registrarse e iniciar sesión en una plataforma.</p>
+                            <div class="tecnologias">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 7 -->
+                <div class="card--proyecto" data-aos="fade-up" data-aos-duration="900">
+                    <div class="card--proyecto-img">
+                        <img src="./images/blog.jpg" alt="Proyecto Web">
+                        <div class="card--proyecto-overlay">
+                            <a href="https://blog-ivory-two.vercel.app/" class="btn-visitar">Ver Proyecto</a>
+                        </div>
+                    </div>
+                        <div class="card--proyecto-content">
+                            <h3>blog personal</h3>
+                            <p>Pagina web de blog personal</p>
+                            <div class="tecnologias">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        <!-- Contacto -->
+        <section class="contacto" id="contacto">
+            <h1 data-section="contacto" data-value="title" data-aos="fade-up">Contacto</h1>
+  
+            <div class="container_box--contacto" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    
+                <div class="container--contacto">
+                    <div class="container_text--contacto">
+                        <p data-section="contacto" data-value="text">Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
+                    </div>
+  
+                    <form id="formulario" class="formulario-contacto" name="contacto-portafolio" method="POST" data-netlify="true">
+                          
+                      <input id="email"  type="email" name="email" id="email" placeholder="email" />
+                      
+                      <input id="nombre" type="text" name="name" id="name" placeholder="nombre" required />
+                      <textarea id="mensaje"
+                        required
+                        name="mensaje"
+                        id="mensaje"
+                        cols="30"
+                        rows="10"
+                        placeholder="comentario"
+                      ></textarea>
+                      <input id="button" type="submit" value="enviar" />
+                     <!-- <input  type="submit" value="enviar" /> -->
+                       </dev>
+                    </form>
+                    <p id="mensaje-confirmacion" style="display: none; color: white; font-size: 20px;">¡Formulario enviado con éxito!</p>
+                  </div>
+            </div>
+        </section>
+    </main>
+  
+    <footer>
+        <div class="contianer--footer">
+            <div class="container_redes-footer">
+                </a>
+                <a href="https://github.com/KeyberIT" target="_blank">
+                    <img src="./images/icon-github.png" alt="GitHub">
+                </a>
+                <a href="https://www.instagram.com/keyber62/" target="_blank">
+                    <img src="./images/icon-instagram.png" alt="Instagram"">
+                </a>
+            </div>
+  
+            <div class="container_text--footer">
+                <span>Copyright © | Coded with</span>
+                <img src="../images/icon-corazon.png" alt="Corazón">
+                <span>by</span>
+                <span>Keyber Mendoza</span>
+            </div>
+        </div>
+    </footer>
+    
+  
+    <div class="go-top-container">
+        <div class="go-top-button">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
+
+
+
+    <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Librería de animaciones -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Mi script -->
+    <script src="./javascripts/script.js"></script>
+</body>
+
+</html>
