@@ -1,3 +1,23 @@
+import { FiExternalLink, FiGithub } from 'react-icons/fi';
+
+const archiveProjects = [
+  {
+    year: '2024',
+    title: 'Advanced AI Portfolio',
+    company: 'Personal',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    link: 'https://github.com/KeyberIT',
+    github: 'https://github.com/KeyberIT/portfolio'
+  },
+  {
+    year: '2023',
+    title: 'E-commerce Platform',
+    company: 'Tech Corp',
+    tech: ['Node.js', 'React', 'Docker'],
+    link: 'https://example.com'
+  }
+];
+
 export default function ArchivePage() {
   return (
     <main className="flex-1 w-full max-w-[1000px] mx-auto px-4 md:px-10 lg:px-24 pt-32 pb-24">
@@ -18,16 +38,30 @@ export default function ArchivePage() {
             </tr>
           </thead>
           <tbody>
-            <tr className="border-b border-lightest-navy/50 hover:bg-light-navy/50 transition-colors group">
-              <td className="py-4 pr-4 text-green font-mono text-sm">2023</td>
-              <td className="py-4 pr-4 text-lightest-slate font-semibold text-lg group-hover:text-green transition-colors">Project Name</td>
-              <td className="py-4 pr-4 text-slate text-sm hidden md:table-cell">Company</td>
-              <td className="py-4 pr-4 text-slate text-xs font-mono hidden lg:table-cell">React &middot; Next.js</td>
-              <td className="py-4 text-slate text-sm">
-                <a href="#" className="hover:text-green transition-colors">External Link</a>
-              </td>
-            </tr>
-            {/* Add more rows dynamically later */}
+            {archiveProjects.map((project, index) => (
+              <tr key={index} className="border-b border-lightest-navy/50 hover:bg-light-navy/50 transition-colors group">
+                <td className="py-4 pr-4 text-green font-mono text-sm">{project.year}</td>
+                <td className="py-4 pr-4 text-lightest-slate font-semibold text-lg group-hover:text-green transition-colors">{project.title}</td>
+                <td className="py-4 pr-4 text-slate text-sm hidden md:table-cell">{project.company}</td>
+                <td className="py-4 pr-4 text-slate text-xs font-mono hidden lg:table-cell">
+                  {project.tech.join(' · ')}
+                </td>
+                <td className="py-4 text-slate text-sm">
+                  <div className="flex items-center gap-3">
+                    {project.github && (
+                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="hover:text-green transition-colors" aria-label="GitHub Link">
+                        <FiGithub size={18} />
+                      </a>
+                    )}
+                    {project.link && (
+                      <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:text-green transition-colors" aria-label="External Link">
+                        <FiExternalLink size={18} />
+                      </a>
+                    )}
+                  </div>
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
