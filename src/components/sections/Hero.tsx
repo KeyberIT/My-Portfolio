@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="flex flex-col justify-center min-h-screen pt-0 p-4 md:p-10 lg:p-24 mx-auto max-w-[1000px]">
+    <section className="flex flex-col justify-center min-h-[80vh] md:min-h-screen pt-32 pb-16 md:pt-0 md:p-10 lg:p-24 mx-auto max-w-[1000px]">
       <h1 className="text-green font-mono mb-6 ml-1 text-sm md:text-base">
         Hi, my name is
       </h1>
