@@ -27,7 +27,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         </p>
       </header>
       <article 
-        className="text-slate leading-relaxed [&>h2]:text-lightest-slate [&>h2]:text-2xl [&>h2]:font-bold [&>h2]:mt-10 [&>h2]:mb-4 [&>h3]:text-lightest-slate [&>h3]:text-xl [&>h3]:font-bold [&>h3]:mt-8 [&>h3]:mb-4 [&>p]:mb-6 [&>a]:text-green [&>a]:underline"
+        className="prose prose-slate prose-invert max-w-none prose-headings:text-lightest-slate prose-a:text-green hover:prose-a:text-green-tint prose-strong:text-lightest-slate"
         dangerouslySetInnerHTML={{ __html: post.contentHtml }} 
       />
     </main>
