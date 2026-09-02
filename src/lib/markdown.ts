@@ -6,13 +6,13 @@ import html from 'remark-html';
 
 const contentDirectory = path.join(process.cwd(), 'content');
 
-export interface MarkdownDocument {
+export interface MarkdownDocument<T = Record<string, unknown>> {
   slug: string;
-  frontmatter: Record<string, any>;
+  frontmatter: T;
   contentHtml: string;
 }
 
-export async function getDocumentBySlug(folder: string, slug: string): Promise<MarkdownDocument | null> {
+export async function getDocumentBySlug<T = Record<string, unknown>>(folder: string, slug: string): Promise<MarkdownDocument<T> | null> {
   try {
     const fullPath = path.join(contentDirectory, folder, `${slug}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
@@ -28,7 +28,7 @@ export async function getDocumentBySlug(folder: string, slug: string): Promise<M
 
     return {
       slug,
-      frontmatter: matterResult.data,
+      frontmatter: matterResult.data as T,
       contentHtml,
     };
   } catch (e) {
@@ -36,7 +36,7 @@ export async function getDocumentBySlug(folder: string, slug: string): Promise<M
   }
 }
 
-export function getAllDocuments(folder: string): Omit<MarkdownDocument, 'contentHtml'>[] {
+export function getAllDocuments<T = Record<string, unknown>>(folder: string): Omit<MarkdownDocument<T>, 'contentHtml'>[] {
   try {
     const dirPath = path.join(contentDirectory, folder);
     if (!fs.existsSync(dirPath)) return [];
@@ -53,7 +53,7 @@ export function getAllDocuments(folder: string): Omit<MarkdownDocument, 'content
 
         return {
           slug,
-          frontmatter: matterResult.data,
+          frontmatter: matterResult.data as T,
         };
       });
       
