@@ -16,8 +16,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Software Engineer",
-  description: "A modern software engineer portfolio.",
+  title: "Keyber Mendoza | Software Engineer",
+  description: "Software Engineer specializing in modern web architecture, React, Next.js, and scalable systems.",
+  keywords: ["Keyber Mendoza", "KeyberIT", "Software Engineer", "Full Stack Developer", "Next.js", "React", "TypeScript", "Portfolio"],
+  authors: [{ name: "Keyber Mendoza", url: "https://github.com/KeyberIT" }],
+  creator: "Keyber Mendoza",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://github.com/KeyberIT",
+    title: "Keyber Mendoza | Software Engineer",
+    description: "Software Engineer specializing in modern web architecture, React, Next.js, and scalable systems.",
+    siteName: "Keyber Mendoza Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Keyber Mendoza | Software Engineer",
+    description: "Software Engineer specializing in modern web architecture, React, Next.js, and scalable systems.",
+    creator: "@KeyberIT",
+  },
 };
 
 export default function RootLayout({
