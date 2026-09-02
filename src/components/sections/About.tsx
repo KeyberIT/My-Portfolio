@@ -26,16 +26,16 @@ export default function About() {
           </ul>
         </div>
         <div className="relative group max-w-[300px] mx-auto md:max-w-none">
-          <div className="w-full aspect-square border-2 border-green rounded relative z-10 transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2 bg-light-navy flex items-center justify-center overflow-hidden">
+          <div className="w-full aspect-square border-2 border-green rounded relative z-10 transition-transform md:group-hover:-translate-x-2 md:group-hover:-translate-y-2 bg-light-navy flex items-center justify-center overflow-hidden">
             <Image
               src="/foto-de-perfil.jpg"
               alt="Foto de perfil de Keyber"
               width={500}
               height={500}
-              className="object-cover w-full h-full mix-blend-multiply filter grayscale contrast-125 transition-all duration-300 group-hover:mix-blend-normal group-hover:filter-none"
+              className="object-cover w-full h-full transition-all duration-300 md:mix-blend-multiply md:filter md:grayscale md:contrast-125 md:group-hover:mix-blend-normal md:group-hover:filter-none"
             />
           </div>
-          <div className="absolute inset-0 border-2 border-green rounded translate-x-4 translate-y-4 -z-10 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
+          <div className="absolute inset-0 border-2 border-green rounded translate-x-4 translate-y-4 -z-10 transition-transform md:group-hover:translate-x-2 md:group-hover:translate-y-2"></div>
         </div>
       </div>
     </section>
