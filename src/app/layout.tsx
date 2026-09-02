@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://keyberit.vercel.app"),
   title: "Keyber Mendoza | Software Engineer",
   description: "Software Engineer specializing in modern web architecture, React, Next.js, and scalable systems.",
   keywords: ["Keyber Mendoza", "KeyberIT", "Software Engineer", "Full Stack Developer", "Next.js", "React", "TypeScript", "Portfolio"],
@@ -24,16 +25,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://github.com/KeyberIT",
+    url: "https://keyberit.vercel.app",
     title: "Keyber Mendoza | Software Engineer",
     description: "Software Engineer specializing in modern web architecture, React, Next.js, and scalable systems.",
     siteName: "Keyber Mendoza Portfolio",
+    images: [
+      {
+        url: "/foto-de-perfil.jpg",
+        width: 800,
+        height: 800,
+        alt: "Keyber Mendoza Profile",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Keyber Mendoza | Software Engineer",
     description: "Software Engineer specializing in modern web architecture, React, Next.js, and scalable systems.",
     creator: "@KeyberIT",
+    images: ["/foto-de-perfil.jpg"],
   },
 };
 
