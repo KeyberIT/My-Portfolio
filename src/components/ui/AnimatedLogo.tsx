@@ -1,6 +1,6 @@
 export default function AnimatedLogo() {
   return (
-    <div className="flex justify-center items-center relative w-[300px] h-[300px] mx-auto">
+    <div className="flex justify-center items-center relative w-[120px] h-[120px] md:w-[150px] md:h-[150px] mx-auto">
       <svg
         id="logo"
         xmlns="http://www.w3.org/2000/svg"
@@ -20,8 +20,9 @@ export default function AnimatedLogo() {
           />
           <text
             x="39"
-            y="56"
+            y="45"
             textAnchor="middle"
+            dominantBaseline="middle"
             className="animate-fade-in fill-green stroke-none font-sans font-semibold text-[44px]"
             style={{
               opacity: 0,

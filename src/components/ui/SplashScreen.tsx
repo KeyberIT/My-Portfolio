@@ -11,17 +11,17 @@ export default function SplashScreen({ children }: { children: ReactNode }) {
     // Disable scroll on mount
     document.body.style.overflow = "hidden";
 
-    // Wait 2s for animation to finish, plus 0.5s pause = 2.5s total before fade out
+    // Wait for faster animation to finish (1.2s + 0.8s), plus short pause
     const fadeOutTimer = setTimeout(() => {
       setIsFadingOut(true);
-    }, 2500);
+    }, 1800);
 
-    // Completely remove splash screen after fade out transition (0.5s duration)
+    // Completely remove splash screen after fade out transition
     const hideTimer = setTimeout(() => {
       setShowSplash(false);
       // Re-enable scroll
       document.body.style.overflow = "";
-    }, 3000);
+    }, 2300);
 
     return () => {
       clearTimeout(fadeOutTimer);
