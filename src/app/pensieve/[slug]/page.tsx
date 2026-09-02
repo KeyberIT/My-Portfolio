@@ -1,8 +1,15 @@
 import { getDocumentBySlug, getAllDocuments } from "@/lib/markdown";
 import { notFound } from "next/navigation";
 
+interface PostFrontmatter {
+  title?: string;
+  date?: string;
+  tags?: string[];
+  [key: string]: unknown;
+}
+
 export async function generateStaticParams() {
-  const posts = getAllDocuments("posts");
+  const posts = getAllDocuments<PostFrontmatter>("posts");
   return posts.map((post) => ({
     slug: post.slug,
   }));
@@ -10,7 +17,7 @@ export async function generateStaticParams() {
 
 export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
-  const post = await getDocumentBySlug("posts", resolvedParams.slug);
+  const post = await getDocumentBySlug<PostFrontmatter>("posts", resolvedParams.slug);
 
   if (!post) {
     notFound();

@@ -1,7 +1,14 @@
 import { getAllDocuments } from "@/lib/markdown";
 
+interface PostFrontmatter {
+  title?: string;
+  date?: string;
+  tags?: string[];
+  [key: string]: unknown;
+}
+
 export async function generateStaticParams() {
-  const posts = getAllDocuments("posts");
+  const posts = getAllDocuments<PostFrontmatter>("posts");
   const allTags = new Set<string>();
   
   posts.forEach(post => {
@@ -17,7 +24,7 @@ export async function generateStaticParams() {
 
 export default async function TagPage({ params }: { params: Promise<{ tag: string }> }) {
   const resolvedParams = await params;
-  const posts = getAllDocuments("posts");
+  const posts = getAllDocuments<PostFrontmatter>("posts");
   
   const taggedPosts = posts.filter(post => {
     if (!post.frontmatter.tags) return false;
