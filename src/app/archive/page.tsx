@@ -6,8 +6,8 @@ const archiveProjects = [
     title: 'Advanced AI Portfolio',
     company: 'Personal',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    link: 'https://github.com/KeyberIT',
-    github: 'https://github.com/KeyberIT/portfolio'
+    link: 'https://github.com/KeyberIT/My-Portfolio',
+    github: 'https://github.com/KeyberIT/My-Portfolio'
   },
   {
     year: '2023',
