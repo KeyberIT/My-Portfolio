@@ -28,7 +28,7 @@ export default function About() {
         <div className="relative group max-w-[300px] mx-auto md:max-w-none">
           <div className="w-full aspect-square border-2 border-green rounded relative z-10 transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2 bg-light-navy flex items-center justify-center overflow-hidden">
             <Image
-              src="/foto-de-perfil.jfif"
+              src="/foto-de-perfil.jpg"
               alt="Foto de perfil de Keyber"
               width={500}
               height={500}
