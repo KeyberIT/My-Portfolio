@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Keyber Mendoza | Software Engineer Portfolio
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-16.3-black?style=flat-square&logo=next.js)
+![React](https://img.shields.io/badge/React-19.2-blue?style=flat-square&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=flat-square&logo=tailwind-css)
 
-First, run the development server:
+> Portafolio interactivo diseñado y construido para demostrar capacidad técnica, arquitectura limpia y dominio del stack moderno de JavaScript/TypeScript.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🏗️ Technical Architecture & Stack
+
+Este proyecto no es una simple landing page; está diseñado bajo estándares estrictos de ingeniería, priorizando escalabilidad, tipado fuerte y DX (Developer Experience).
+
+- **Framework:** [Next.js 16](https://nextjs.org/) (App Router) para Server-Side Rendering (SSR) y optimización de rutas.
+- **UI Library:** [React 19](https://react.dev/), aprovechando las últimas capacidades de renderizado concurrente y hooks nativos.
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) mediante utilidades inyectadas vía PostCSS, garantizando una carga CSS mínima y un sistema de diseño consistente.
+- **Type Safety:** **TypeScript** configurado en modo `strict: true`. No se permiten castings implícitos ni escapes inseguros (`any`).
+- **Package Manager:** **Bun** para resoluciones de dependencias ultrarrápidas y ejecución de scripts nativos.
+
+## 📂 Project Structure
+
+El código fuente sigue los principios de **Atomic Design** y separación de responsabilidades:
+
+```text
+src/
+├── app/                  # Routing de Next.js (App Router) y layouts principales.
+├── components/
+│   ├── sections/         # Componentes de alto nivel (Hero, About, Featured, Jobs).
+│   └── ui/               # Componentes base reutilizables y agnósticos al contexto.
+└── lib/                  # Utilidades, configuraciones y helpers tipados.
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Running Locally
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Para levantar este proyecto en tu entorno local, asegúrate de tener [Bun](https://bun.sh/) instalado.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# 1. Instalar dependencias
+bun install
 
-## Learn More
+# 2. Iniciar el servidor de desarrollo
+bun run dev
 
-To learn more about Next.js, take a look at the following resources:
+# 3. Compilar para producción
+bun run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+El proyecto estará disponible en `http://localhost:3000`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧠 Engineering Standards
 
-## Deploy on Vercel
+- **Strict Type Checking:** Todo el estado, las props y los retornos de funciones están rígidamente tipados.
+- **Performance First:** Uso de optimización nativa y modularidad para garantizar un LCP (Largest Contentful Paint) óptimo.
+- **Semantic HTML & A11y:** Estructura de documentos accesible por defecto.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Diseñado y desarrollado por Keyber Mendoza.*
