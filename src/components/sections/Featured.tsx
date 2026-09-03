@@ -62,36 +62,37 @@ export default function Featured() {
 
       <div className="space-y-24">
         {PROJECTS.map((project, index) => (
-          <div key={index} className="relative grid grid-cols-12 items-center">
+          <div key={index} className="relative grid grid-cols-12 items-center mb-16 md:mb-24 last:mb-0">
             
-            {/* Contenedor condicional para la imagen */}
-            <div className={`hidden md:block col-span-7 h-full bg-green rounded overflow-hidden group cursor-pointer shadow-lg z-10 transition-all duration-300 ${project.isRightAligned ? 'col-start-1 row-start-1' : 'col-start-6 row-start-1'}`}>
+            {/* Contenedor de la imagen */}
+            <div className={`col-span-12 col-start-1 md:col-span-7 h-full w-full bg-navy md:bg-green rounded overflow-hidden group cursor-pointer shadow-lg z-10 transition-all duration-300 ${project.isRightAligned ? 'md:col-start-1' : 'md:col-start-6'} row-start-1`}>
               <a href={project.url} target="_blank" rel="noopener noreferrer" className="block w-full h-full relative">
-                <div className="absolute inset-0 bg-navy/20 mix-blend-screen group-hover:bg-transparent transition-all duration-300 z-10"></div>
-                <div className="w-full h-full relative mix-blend-multiply grayscale group-hover:mix-blend-normal group-hover:grayscale-0 transition-all duration-300">
+                {/* Overlay oculto en movil, visible en desktop */}
+                <div className="hidden md:block absolute inset-0 bg-navy/20 mix-blend-screen group-hover:bg-transparent transition-all duration-300 z-10"></div>
+                <div className="w-full h-full relative md:mix-blend-multiply md:grayscale group-hover:mix-blend-normal group-hover:grayscale-0 transition-all duration-300">
                   <Image 
                     src={project.image} 
                     alt={project.title} 
                     width={1000}
                     height={600}
-                    className="w-full h-full min-h-[340px] object-cover" 
+                    className="w-full h-full min-h-[340px] md:min-h-[380px] object-cover opacity-25 md:opacity-100" 
                   />
                 </div>
               </a>
             </div>
 
             {/* Contenido (Texto) */}
-            <div className={`col-span-12 md:col-span-7 relative z-20 flex flex-col row-start-1 ${project.isRightAligned ? 'md:col-start-6 md:items-end text-left md:text-right' : 'md:col-start-1 md:items-start text-left'}`}>
+            <div className={`col-span-12 col-start-1 md:col-span-7 relative z-20 flex flex-col justify-center p-8 md:p-0 row-start-1 ${project.isRightAligned ? 'md:col-start-6 md:items-end text-left md:text-right' : 'md:col-start-1 md:items-start text-left'}`}>
               <p className="text-green font-mono text-[13px] my-2">Featured Project</p>
               <h3 className="text-lightest-slate text-2xl md:text-[28px] font-bold mb-6 hover:text-green cursor-pointer transition-colors">
                 <a href={project.url} target="_blank" rel="noopener noreferrer">{project.title}</a>
               </h3>
               
-              <div className={`bg-light-navy text-light-slate p-6 rounded shadow-xl mb-6 w-full hover:shadow-2xl transition-shadow duration-300 ${project.isRightAligned ? 'text-left md:text-right' : 'text-left'}`}>
+              <div className={`bg-transparent md:bg-light-navy text-light-slate md:p-6 rounded md:shadow-xl mb-6 w-full transition-shadow duration-300 ${project.isRightAligned ? 'text-left md:text-right' : 'text-left'}`}>
                 <p>{project.description}</p>
               </div>
 
-              <ul className={`flex flex-wrap gap-x-5 gap-y-2 font-mono text-[13px] text-slate mb-6 ${project.isRightAligned ? 'md:justify-end' : 'md:justify-start'}`}>
+              <ul className={`flex flex-wrap gap-x-5 gap-y-2 font-mono text-[13px] text-light-slate md:text-slate mb-6 ${project.isRightAligned ? 'md:justify-end' : 'md:justify-start'}`}>
                 {project.techStack.map(tech => (
                   <li key={tech}>{tech}</li>
                 ))}
