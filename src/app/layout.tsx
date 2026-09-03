@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Keyber Mendoza Portfolio",
     images: [
       {
-        url: "/foto-de-perfil.jpg",
+        url: "/me.jpg",
         width: 800,
         height: 800,
         alt: "Keyber Mendoza Profile",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Keyber Mendoza | Software Engineer",
     description: "Software Engineer specializing in modern web architecture, React, Next.js, and scalable systems.",
     creator: "@KeyberIT",
-    images: ["/foto-de-perfil.jpg"],
+    images: ["/me.jpg"],
   },
 };
 
