@@ -5,7 +5,6 @@ export default function Footer() {
         {/* Social links placeholder for mobile */}
         <a href="#" className="hover:text-green">GitHub</a>
         <a href="#" className="hover:text-green">LinkedIn</a>
-        <a href="#" className="hover:text-green">Twitter</a>
       </div>
       <div className="hover:text-green transition-colors">
         <div>Designed & Built by Keyber Mendoza</div>

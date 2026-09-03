@@ -10,7 +10,7 @@ export default function Contact() {
       <p className="text-slate text-lg mb-12">
         Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
       </p>
-      <a href="mailto:hello@example.com" className="text-green bg-transparent border border-green rounded px-7 py-4 text-sm font-mono hover:bg-green-tint transition-colors duration-300">
+      <a href="mailto:hello@example.com" className="inline-block text-green bg-transparent border border-green rounded px-7 py-4 text-sm font-mono transition-all duration-300 md:hover:-translate-x-1 md:hover:-translate-y-1 md:hover:shadow-[4px_4px_0_0_var(--color-green)] focus:outline-none">
         Say Hello
       </a>
     </section>
