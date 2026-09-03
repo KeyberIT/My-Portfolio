@@ -7,8 +7,8 @@ export default function About() {
         <span className="text-green font-mono text-xl">01.</span> About Me
         <div className="h-[1px] bg-lightest-navy flex-1"></div>
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-        <div className="md:col-span-2 text-slate space-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
+        <div className="md:col-span-3 text-slate space-y-4">
           <p>
             My focus is transforming complex business problems into resilient digital products. I've designed and engineered everything from interactive platforms featuring Drag & Drop engines and real-time booking systems, to Business Intelligence architectures geared toward data-driven decision making.
           </p>
@@ -25,17 +25,20 @@ export default function About() {
             <li className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-green before:mt-[2px]">PostgreSQL</li>
           </ul>
         </div>
-        <div className="relative group max-w-[300px] mx-auto md:max-w-none">
-          <div className="w-full aspect-square border-2 border-green rounded relative z-10 transition-transform md:group-hover:-translate-x-2 md:group-hover:-translate-y-2 bg-light-navy flex items-center justify-center overflow-hidden">
-            <Image
-              src="/foto-de-perfil.jpg"
-              alt="Foto de perfil de Keyber"
-              width={500}
-              height={500}
-              className="object-cover w-full h-full transition-all duration-300 md:mix-blend-multiply md:filter md:grayscale md:contrast-125 md:group-hover:mix-blend-normal md:group-hover:filter-none"
-            />
+        <div className="md:col-span-2 max-w-[300px] md:max-w-[500px] mx-auto w-full md:ml-auto md:mr-0">
+          <div className="relative group w-full aspect-square">
+            <div className="absolute inset-0 border-2 border-green rounded translate-x-4 translate-y-4 -z-10 transition-transform md:group-hover:translate-x-2 md:group-hover:translate-y-2"></div>
+            <div className="w-full h-full border-2 border-green rounded relative z-10 transition-transform md:group-hover:-translate-x-2 md:group-hover:-translate-y-2 bg-light-navy overflow-hidden">
+              <Image
+                src="/me.jpg"
+                alt="Keyber Mendoza - Profile Photo"
+                fill
+                sizes="(max-width: 768px) 100vw, 500px"
+                priority
+                className="object-cover transition-all duration-300 md:mix-blend-multiply md:filter md:grayscale md:contrast-125 md:group-hover:mix-blend-normal md:group-hover:filter-none"
+              />
+            </div>
           </div>
-          <div className="absolute inset-0 border-2 border-green rounded translate-x-4 translate-y-4 -z-10 transition-transform md:group-hover:translate-x-2 md:group-hover:translate-y-2"></div>
         </div>
       </div>
     </section>
