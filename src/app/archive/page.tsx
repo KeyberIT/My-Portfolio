@@ -2,7 +2,7 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi';
 
 const archiveProjects = [
   {
-    year: '2024',
+    year: '2026',
     title: 'My-Portfolio',
     company: 'Personal',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],

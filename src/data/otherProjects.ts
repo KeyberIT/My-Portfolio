@@ -11,6 +11,13 @@ export interface OtherProject {
 // reales cuando estés listo para subir tu código a producción.
 export const otherProjects: OtherProject[] = [
   {
+    title: "My-Portfolio",
+    description: "My personal portfolio website built with Next.js, featuring interactive UI components, smooth animations, and a sleek, responsive design.",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    githubUrl: "https://github.com/KeyberIT/My-Portfolio",
+  },
+  /*
+  {
     title: "Advanced AI Portfolio",
     description: "An AI-powered portfolio platform featuring an integrated assistant that can audit code, simulate technical interviews, and auto-generate responsive layouts.",
     techStack: ["Next.js", "AI", "Tailwind CSS"],
@@ -48,4 +55,5 @@ export const otherProjects: OtherProject[] = [
     techStack: ["Vue.js", "GraphQL", "AWS IoT"],
     externalUrl: "https://example.com",
   }
+  */
 ];
