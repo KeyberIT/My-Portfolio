@@ -6,6 +6,9 @@ export interface OtherProject {
   externalUrl?: string;
 }
 
+// NOTA: Estos proyectos y sus enlaces (githubUrl, externalUrl) son 
+// de ejemplo (placeholders). Recuerda reemplazarlos con tus proyectos 
+// reales cuando estés listo para subir tu código a producción.
 export const otherProjects: OtherProject[] = [
   {
     title: "Advanced AI Portfolio",

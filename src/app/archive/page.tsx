@@ -3,12 +3,15 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi';
 const archiveProjects = [
   {
     year: '2024',
-    title: 'Advanced AI Portfolio',
+    title: 'My-Portfolio',
     company: 'Personal',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
     link: 'https://github.com/KeyberIT/My-Portfolio',
     github: 'https://github.com/KeyberIT/My-Portfolio'
   },
+  // NOTA: Proyecto de ejemplo comentado para que lo uses como plantilla
+  // cuando quieras agregar más proyectos reales al archivo.
+  /*
   {
     year: '2023',
     title: 'E-commerce Platform',
@@ -16,6 +19,7 @@ const archiveProjects = [
     tech: ['Node.js', 'React', 'Docker'],
     link: 'https://example.com'
   }
+  */
 ];
 
 export default function ArchivePage() {
