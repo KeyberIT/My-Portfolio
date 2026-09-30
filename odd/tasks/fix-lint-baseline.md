@@ -27,9 +27,10 @@ Remove the existing ESLint failures without changing application behavior or the
 - The work-unit commit identity is recorded here.
 
 ## Progress
-- Status: complete; commit identity pending coordinator record
+- Status: complete
 - Review assessment: medium risk, 55 changed lines, under budget; unrelated `.atl/` files were excluded from the candidate.
-- Next step: coordinator records the work-unit commit identity.
+- Work-unit commit: `6a2daa4` (`fix(lint): clear baseline eslint findings`)
+- Next step: none for this lint cleanup.
 
 ## Checks executed
 - `bun run lint` — passed with no errors or warnings.
