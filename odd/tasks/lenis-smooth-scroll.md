@@ -39,7 +39,7 @@ Improve perceived scroll quality while preserving the current Next.js App Router
 - All completed checklist items include observed verification evidence and a conventional work-unit commit.
 
 ## Progress
-- Status: implementation complete; full lint remains blocked by pre-existing baseline errors
+- Status: complete; full lint remains blocked by pre-existing baseline errors
 - Completed: task document created before source changes; LENIS-1 through LENIS-4 implemented and verified by targeted lint, TypeScript, build, and independent static inspection.
 - Evidence:
   - LENIS-1: `package.json` and `bun.lock` contain `lenis@^1.3.26`; `SmoothScrollProvider` mounts `ReactLenis` from `lenis/react` with `root`, `autoRaf: true`, and `anchors: true`; reduced-motion behavior remains Lenis's default because `respectReducedMotion` is not disabled.
@@ -52,4 +52,5 @@ Improve perceived scroll quality while preserving the current Next.js App Router
   - `git diff --check`: passed; no GSAP, ScrollTrigger, or additional RAF loop was introduced.
   - Independent verification: partial; implementation is coherent, but real browser checks for visual smoothing, loader/menu locking, and fixed-header anchor offsets remain unavailable in this environment.
   - Review assessment: medium risk, 141 changed lines, under budget; native review was not started because the provider's intended-untracked JSON submission refused before mutation.
-- Next step: create the conventional work-unit commit and record its identity here.
+- Work-unit commit: `8f4c084` (`feat(scroll): integrate Lenis smooth scrolling`)
+- Next step: browser verification of visual smoothing, loader/menu locking, and fixed-header anchor offsets.
