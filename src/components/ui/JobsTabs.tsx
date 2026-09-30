@@ -14,7 +14,7 @@ export default function JobsTabs({ jobs }: JobsTabsProps) {
 
   return (
     <div className="flex flex-col md:flex-row gap-8">
-      <div className="flex overflow-x-auto md:overflow-x-hidden md:flex-col md:min-w-[220px] border-b md:border-b-0 md:border-l border-lightest-navy no-scrollbar">
+      <div data-lenis-prevent className="flex overflow-x-auto md:overflow-x-hidden md:flex-col md:min-w-[220px] border-b md:border-b-0 md:border-l border-lightest-navy no-scrollbar">
         {jobs.map((job, i) => (
           <button
             key={i}

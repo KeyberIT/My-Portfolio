@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
+import { lockBodyScroll } from "@/lib/body-scroll-lock";
 
 const NAV_LINKS = [
   { name: "About", url: "#about" },
@@ -13,15 +14,10 @@ const NAV_LINKS = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Prevenir scroll cuando el menú está abierto
   useEffect(() => {
-    const originalStyle = window.getComputedStyle(document.body).overflow;
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    }
-    return () => {
-      document.body.style.overflow = originalStyle;
-    };
+    if (!isOpen) return;
+
+    return lockBodyScroll();
   }, [isOpen]);
 
   return (

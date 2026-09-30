@@ -2,14 +2,14 @@
 
 import { useState, useEffect, ReactNode } from "react";
 import AnimatedLogo from "./AnimatedLogo";
+import { lockBodyScroll } from "@/lib/body-scroll-lock";
 
 export default function SplashScreen({ children }: { children: ReactNode }) {
   const [showSplash, setShowSplash] = useState(true);
   const [isFadingOut, setIsFadingOut] = useState(false);
 
   useEffect(() => {
-    // Disable scroll on mount
-    document.body.style.overflow = "hidden";
+    const releaseBodyScroll = lockBodyScroll();
 
     // Wait for faster animation to finish (1.2s + 0.8s), plus short pause
     const fadeOutTimer = setTimeout(() => {
@@ -19,14 +19,13 @@ export default function SplashScreen({ children }: { children: ReactNode }) {
     // Completely remove splash screen after fade out transition
     const hideTimer = setTimeout(() => {
       setShowSplash(false);
-      // Re-enable scroll
-      document.body.style.overflow = "";
+      releaseBodyScroll();
     }, 2300);
 
     return () => {
       clearTimeout(fadeOutTimer);
       clearTimeout(hideTimer);
-      document.body.style.overflow = "";
+      releaseBodyScroll();
     };
   }, []);
 
