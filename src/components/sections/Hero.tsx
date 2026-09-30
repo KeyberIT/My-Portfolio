@@ -11,7 +11,7 @@ export default function Hero() {
         Software engineering, not just code.
       </h3>
       <p className="text-slate max-w-xl text-lg mb-12">
-        I'm a Full-Stack Engineer specializing in scalable architectures and high-performance web experiences. I design robust end-to-end systems, from optimized relational databases to dynamic interfaces built to handle high concurrency.
+        I&apos;m a Full-Stack Engineer specializing in scalable architectures and high-performance web experiences. I design robust end-to-end systems, from optimized relational databases to dynamic interfaces built to handle high concurrency.
       </p>
       <div>
         <a href="#work" className="inline-block text-green bg-transparent border border-green rounded px-7 py-4 text-sm font-mono transition-all duration-300 md:hover:-translate-x-1 md:hover:-translate-y-1 md:hover:shadow-[4px_4px_0_0_var(--color-green)] focus:outline-none">

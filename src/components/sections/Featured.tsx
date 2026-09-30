@@ -56,7 +56,7 @@ export default function Featured() {
   return (
     <section id="work" className="py-24 max-w-[1000px] mx-auto w-full px-4 md:px-10 lg:px-24">
       <h2 className="text-lightest-slate font-semibold text-2xl md:text-3xl mb-10 flex items-center gap-4">
-        <span className="text-green font-mono text-xl">03.</span> Some Things I've Built
+        <span className="text-green font-mono text-xl">03.</span> Some Things I&apos;ve Built
         <div className="h-[1px] bg-lightest-navy flex-1"></div>
       </h2>
 

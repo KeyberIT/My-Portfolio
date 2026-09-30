@@ -27,7 +27,7 @@ export default function ArchivePage() {
     <main className="flex-1 w-full max-w-[1000px] mx-auto px-4 md:px-10 lg:px-24 pt-32 pb-24">
       <header className="mb-12">
         <h1 className="text-lightest-slate text-4xl md:text-5xl font-bold mb-4">Archive</h1>
-        <p className="text-green font-mono text-sm">A big list of things I've worked on</p>
+        <p className="text-green font-mono text-sm">A big list of things I&apos;ve worked on</p>
       </header>
 
       <div className="overflow-x-auto">

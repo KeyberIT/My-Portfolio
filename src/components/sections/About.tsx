@@ -10,12 +10,12 @@ export default function About() {
       <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
         <div className="md:col-span-3 text-slate space-y-4">
           <p>
-            My focus is transforming complex business problems into resilient digital products. I've designed and engineered everything from interactive platforms featuring Drag & Drop engines and real-time booking systems, to Business Intelligence architectures geared toward data-driven decision making.
+            My focus is transforming complex business problems into resilient digital products. I&apos;ve designed and engineered everything from interactive platforms featuring Drag & Drop engines and real-time booking systems, to Business Intelligence architectures geared toward data-driven decision making.
           </p>
           <p>
-            I operate under strict engineering standards. The adoption of clean architectures, strict typing, and rigorous code reviews are the foundation of my workflow. I don't build things just to "make them work"; I build maintainable, scalable systems ready for demanding production environments.
+            I operate under strict engineering standards. The adoption of clean architectures, strict typing, and rigorous code reviews are the foundation of my workflow. I don&apos;t build things just to &quot;make them work&quot;; I build maintainable, scalable systems ready for demanding production environments.
           </p>
-          <p>Here are a few technologies I've been working with recently:</p>
+          <p>Here are a few technologies I&apos;ve been working with recently:</p>
           <ul className="grid grid-cols-2 gap-x-3 gap-y-2 font-mono text-xs text-slate list-none mt-5 max-w-[400px]">
             <li className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-green before:mt-[2px]">Next.js</li>
             <li className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-green before:mt-[2px]">TypeScript</li>

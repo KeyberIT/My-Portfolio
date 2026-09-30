@@ -31,7 +31,7 @@ export async function getDocumentBySlug<T = Record<string, unknown>>(folder: str
       frontmatter: matterResult.data as T,
       contentHtml,
     };
-  } catch (e) {
+  } catch {
     return null;
   }
 }
@@ -59,7 +59,7 @@ export function getAllDocuments<T = Record<string, unknown>>(folder: string): Om
       
     // Sort logic could be applied here if needed (e.g. by date)
     return allDocs;
-  } catch (e) {
+  } catch {
     return [];
   }
 }
